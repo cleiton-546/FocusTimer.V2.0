@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hue:194;
+    --White-background:hsl(var(--hue),5%, 100%);
+    --text-color:hsl(var(--hue),6%, 21%);
+    --background-button:hsl(var(--hue),9%, 89%);
+    --button-presed:hsl(var(--hue),97%, 31%);
+
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+}
+
+html.light {
+    --White-background: hsl(var(--hue), 6%, 21%); 
+    --text-color:hsl(var(--hue), 0%, 100%); 
+    --background-button:hsl(var(--hue), 9%, 89%); 
+    --button-presed:hsl(var(--hue), 97%, 31%);
+}
+    
+html.light .ph-sun,
+html:not(.light) .ph-moon {
+    display: none;
+}
+
+#toggle-mode {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 3.2rem;
+    border: none;
+    line-height: 0;
+    background-color: var(--White-background);
+    color: var(--text-color);
+    
+}
+ 
+
+.sr-only {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    padding: 0px;
+    border: 0;
+    appearance: none;
+}
+
+body {
+    background-color: var(--White-background);
+    color: var(--text-color);
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+button {
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+#timer {
+    font-size: 12.6rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    display: flex;
+    margin-bottom: 1.7rem;
+
+}
+
+#controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 1rem;
+    
+}
+
+
+#controls button {
+    transition: all .5s ease;
+    cursor: pointer;
+    font-size: 3.5rem;
+}
+
+#controls button:hover {
+    transform: scale(1.1);
+}
+
+#music {
+    margin-left: 9rem;
+}
+
+
+#cards {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   gap: 3.2rem;
+}
+
+#cards  button{
+  padding: 4.8rem;
+  background-color: var(--background-button);
+  font-size: 5rem;
+
+  border-radius: 2.4rem;
+
+  transition: all .4s ease;
+}
+
+#cards button:hover {
+    background-color: var(--button-presed);
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+#cards button.select {
+    background-color: var(--button-presed);
+}
