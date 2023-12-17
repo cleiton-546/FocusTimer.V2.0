@@ -1,6 +1,6 @@
 # 💻 Sobre o desafio
 
-link do desafio [**link**](https://cleiton-546.github.io/FocusTimer.V2.0/)
+link do desafio [**link**] (https://cleiton-546.github.io/FocusTimer.V2.0/)
 
 Aqui está o [**link**](https://www.figma.com/file/Pw8yMsK7HFkD6aISZt6gPA/Stage-05---Focus-Timer-2.0/duplicate) com o layout da aplicação. Ele abrirá um arquivo igual a imagem abaixo:
 
